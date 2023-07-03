@@ -20,3 +20,20 @@
 
 
 /*Layout*/
+
+.container {
+    margin: auto auto;
+    max-width: 100%;
+}
+
+
+header {
+    background-color: #0084fd;
+    height: 50px;
+    line-height: 50px;
+}
+
+#section1 .row {
+    background-color: #B5DDFF;
+    
+}
