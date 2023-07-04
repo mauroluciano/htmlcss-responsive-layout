@@ -39,7 +39,7 @@ header {
   height: 60px;
 }
 
-#section .col {
+.col {
   padding: 1rem;
 }
 
@@ -51,10 +51,16 @@ header {
 
 .row {
   margin: 0 -1rem;
+  width: 100%;
 }
 
 section {
   padding: 3rem;
+}
+
+.text-medium {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*header*/
@@ -78,13 +84,61 @@ section {
   background-color: #9792e4;
 }
 
-.section2-card {
-  width: calc(100% / 2);
+#section2 img {
+  width: 70%;
 }
+
+.section2-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+/* close Section 2*/
+
+/* open Section 3*/
+
+#section3 .col {
+  text-align: center;
+}
+
+.card-testimonials {
+  background-color: #b5ddff;
+  padding: 1rem;
+  border-radius: 50px;
+  min-height: 150px;
+  margin: 1rem;
+}
+
+.card-left {
+  width: 30%;
+}
+
+.circular-img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular-img img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
+.card-right {
+  width: 70%;
+}
+
+/* close Section 3*/
 
 /*Responsive layout*/
 
-/* Tablet */
+/* TABLET */
+
+/*HEADER*/
 
 @media screen and (min-width: 576px) {
   header .fa-bars {
@@ -94,6 +148,10 @@ section {
   header .menu {
     display: inline-block;
   }
+
+  /*CLOSE HEADER*/
+
+  /*OPEN SECTION1*/
 
   #section .container .row {
     display: flex;
@@ -115,13 +173,51 @@ section {
   .card-section {
     width: 50%;
   }
+
+  /*CLOSE SECTION1*/
+
+  /*OPEN SECTION2*/
+
+  #section2 .col {
+    width: calc(100% / 2);
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  /*CLOSE SECTION2*/
+
+  /*OPEN SECTION3*/
+
+  #section3 .card-testimonials {
+  display: flex; {
+  }
 }
 
 /* Desktop */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 990px) {
   .container {
     max-width: 1140px;
     margin: auto;
+  }
+
+  #section2 .col {
+    width: 50%;
+  }
+
+  #section2 .col:last-child {
+    align-items: flex-end;
+    display: flex;
+  }
+  #section2 .row {
+    display: flex;
+  }
+
+  #section2 .col:last-child .section2-card {
+    width: 100%;
+  }
+
+  #section3 {
+    margin: 0 auto;
   }
 }
